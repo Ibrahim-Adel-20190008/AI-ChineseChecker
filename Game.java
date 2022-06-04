@@ -506,8 +506,8 @@ public class Game {
         if (x <= WIDTH - 5) {
             if (tmpboard[y][x + 2] != EMPTY && tmpboard[y][x + 4] == EMPTY) {
                 if (!checkStateByXY(point, x + 4, y)) {
-                    point.AvailableCells.add(point.x + 4);
-                    point.AvailableCells.add(point.y);
+                    point.AvailableCells.add(x + 4);
+                    point.AvailableCells.add(y);
                     CheckNonAdjMove(point, x + 4, y);
                 }
             }
